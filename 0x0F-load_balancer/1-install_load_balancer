@@ -38,7 +38,7 @@ frontend musyoki-tech-frontend
     bind *:80
     default_backend musyoki-tech-backend
 
-backend clickviral-tech-backend
+backend musyoki-tech-backend
     balance roundrobin
     server 496692-web-01 54.152.58.246:80 check
     server 496692-web-02 52.91.184.6:80 check
