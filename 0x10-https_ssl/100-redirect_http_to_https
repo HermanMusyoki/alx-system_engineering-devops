@@ -43,7 +43,7 @@ frontend musyoki-frontend
 frontend musyoki-frontend-https
         bind *:443 ssl crt /etc/haproxy/certs/www.musyoki.tech.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend clickviral-backend
+        default_backend musyoki-backend
 
 backend musyoki-backend
         balance roundrobin
